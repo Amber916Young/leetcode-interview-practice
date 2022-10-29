@@ -5,6 +5,8 @@ package Tree;
  * @ClassName:lowestCommonAncestor
  * @Auther: yyj
  * @Description: https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+ * 235. Lowest Common Ancestor of a Binary Search Tree
+ * 236. Lowest Common Ancestor of a Binary Tree
  * @Date: 20/10/2022 16:20
  * @Version: v1.0
  */
