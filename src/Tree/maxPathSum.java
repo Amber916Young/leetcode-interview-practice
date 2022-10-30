@@ -3,15 +3,13 @@ package Tree;
 /**
  * @ClassName:maxPathSum
  * @Auther: yyj
- * @Description:
+ * @Description:  https://leetcode.com/problems/binary-tree-maximum-path-sum/
  * @Date: 20/10/2022 15:51
  * @Version: v1.0
  */
 public class maxPathSum {
 
-
-
-    //https://leetcode.com/problems/binary-tree-maximum-path-sum/
+    //124. Binary Tree Maximum Path Sum
     int ans = Integer.MIN_VALUE;
     public int maxPathSum_DFS(TreeNode root){
         if(root == null) return 0;
