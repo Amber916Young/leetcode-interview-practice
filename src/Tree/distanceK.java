@@ -22,8 +22,8 @@ public class distanceK  {
 //        test.distanceK(treeNode,);
 
     }
-
     Map<TreeNode, TreeNode> parent;
+
     public List<Integer> distanceK(TreeNode root, TreeNode target, int K) {
         parent = new HashMap();
         dfs(root, null);
@@ -77,8 +77,6 @@ public class distanceK  {
     }
 
 
-
-
     Map<Integer,List<Integer>> map = new HashMap<>(); //map the nodes and its neightbor
     public List<Integer> distanceK2(TreeNode root, TreeNode target, int k) {
         if(root==null) return new ArrayList<Integer>();
@@ -109,10 +107,10 @@ public class distanceK  {
     }
 
     //build Graph
-    public void Graphdfs(TreeNode root, TreeNode parent){
+    public void Graphdfs(TreeNode root, TreeNode father){
         if(root == null) return;
         map.putIfAbsent(root.val, new ArrayList<>());
-        if(parent!=null) map.get(root.val).add(parent.val);
+        if(father!=null) map.get(root.val).add(father.val);
         if(root.right!=null)map.get(root.val).add(root.right.val);
         if(root.left!=null)map.get(root.val).add(root.left.val);
         Graphdfs(root.left,root);
