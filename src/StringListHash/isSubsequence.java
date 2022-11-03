@@ -12,7 +12,6 @@ public class isSubsequence {
         isSubsequence("aec","abcde");
     }
 
-
     // beats 100%
    static public boolean isSubsequence(String s, String t) {
         char[] s1 = s.toCharArray();
