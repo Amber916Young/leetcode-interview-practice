@@ -26,13 +26,34 @@ public class lengthOfLongestSubstring {
         int left =0,answer = 0;
         for (int i = 0; i < s.length(); i++) {
             char cur = s.charAt(i);
-            while (!set.add(cur)) {
+            while (set.contains(cur)) {
                 char deleteChar = s.charAt(left);
                 set.remove(deleteChar);
                 left++;
             }
+            set.add(cur);
             answer = Math.max(answer, i - left + 1);
         }
         return answer;
+
+
+        /**
+         *
+         *     public int lengthOfLongestSubstring(String s) {
+         *       Set<Character> set = new HashSet<>();
+         *         int left =0,answer = 0;
+         *         for (int i = 0; i < s.length(); i++) {
+         *             char cur = s.charAt(i);
+         *             while (set.contains(cur)) {
+         *                 char deleteChar = s.charAt(left);
+         *                 set.remove(deleteChar);
+         *                 left++;
+         *             }
+         *             set.add(cur);
+         *             answer = Math.max(answer, i - left + 1);
+         *         }
+         *         return answer;
+         *     }
+         * */
     }
 }
