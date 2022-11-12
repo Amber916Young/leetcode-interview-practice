@@ -13,6 +13,7 @@ import java.util.PriorityQueue;
  */
 public class kthSmallest {
 
+    // max Heap
     public int kthSmallest2(int[][] matrix, int k) {
         int n = matrix.length;
         if (n == 1 && k == 1) return matrix[0][0];
@@ -26,6 +27,7 @@ public class kthSmallest {
         }
         return minHeap.peek();
     }
+    // min Heap
     public int kthSmallest(int[][] matrix, int k) {
         int n = matrix.length;
         if (n == 1 && k == 1) return matrix[0][0];

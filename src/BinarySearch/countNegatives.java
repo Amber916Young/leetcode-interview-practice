@@ -29,8 +29,7 @@ public class countNegatives {
                 if(grid[i][mid]<0) {
                     temp = mid;
                     r=mid-1;
-                }
-                else{
+                } else{
                     l=mid+1;
                 }
                 System.out.print(ans);
