@@ -9,7 +9,7 @@ package BinarySearch;
  */
 public class longestOnes {
     public static void main(String[] args) {
-        longestOnes(new int[]{0,0,0,1,1,1,1,0},2);
+        longestOnes(new int[]{1,1,1,0,0,0,1,1,1,1,0},2);
     }
 
     static public int longestOnes(int[] nums, int k) {
