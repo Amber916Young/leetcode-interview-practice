@@ -11,10 +11,9 @@ import java.util.*;
  */
 public class isIsomorphic {
     public static void main(String[] args) {
-        isIsomorphic("baba","abba");
+        isIsomorphic("foo","bar");
     }
     static public boolean isIsomorphic(String s, String t) {
-
         HashMap<Character, Character> map = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
